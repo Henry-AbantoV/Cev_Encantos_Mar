@@ -10,7 +10,7 @@ const AddProduct = () => {
   const [obtenerData, setObtenerData] = useState()
 
 
-  const { data, getData } = useGet('https://65c2e3fdf7e6ea59682bc40a.mockapi.io/Producto')
+  const { data, getData } = useGet('https://65dcf122e7edadead7ed26d9.mockapi.io/Product')
 
   useEffect(() => {
     getData()
