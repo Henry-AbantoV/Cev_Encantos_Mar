@@ -13,7 +13,7 @@ const Header = ({ isOpen, setIsOpen }) => {
         <nav className='nav'>
             <div className='nav__logo'>
                 <img src={logo} alt="" />
-                <p>Kasiques Technology</p>
+                <p> Cevicheria Encantos del Mar</p>
 
                 <div className={`nav_toogle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
                     <span></span>
