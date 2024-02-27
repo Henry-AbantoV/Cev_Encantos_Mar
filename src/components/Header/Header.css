@@ -1,0 +1,319 @@
+ul,
+li,
+a {
+    all: unset;
+    color: white;
+}
+
+.nav__logo>img {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav_toogle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.nav__user>img {
+    width: 60px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+
+@media only screen and (min-width: 769px) {
+    .nav {
+        background-color: #317079;
+        height: 80px;
+        display: grid;
+        grid-template-columns: .4fr 1fr 250px;
+        grid-template-rows: 80px;
+        position: fixed;
+        width: 100% ; 
+        
+    }
+
+    .nav__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: max-content;
+    }
+
+    .nav__logo>img {
+        margin: 5px 10px 5px 10px;
+        /*margin-top: 5px;*/
+        /*margin-bottom: 5px;*/
+        /*height: 70px;*/
+        height: 60px;
+        width: auto!important;
+        transition: all 0.3s;
+    }
+
+    .nav__logo>img:hover {
+        transform: scale(1.2);
+    }
+
+    .nav__logo> p{
+        margin: 2px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /*height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: rgb(146, 62, 62);*/
+    }
+
+    .nav__links {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .nav__links li {
+        width: 120px;
+        height: max-content;
+        margin-right: 30px;
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /*font-family: "Playfair Display", Georgia, serif;*/
+    }
+
+    .nav__links li a{
+        display: block;
+        color:white;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: 0.2s;
+        margin: 0 10px;
+        text-decoration: none;
+    } 
+
+    .nav__links li a:hover{
+        color: black;
+        background: white;
+    }
+    
+    .nav__links li a.active {
+        color: black;
+        background: white;
+    }
+
+    .nav__user {
+        /* background-color: #fff; */
+        /* background-image: linear-gradient(to left, rgb(130, 127, 127), white); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav__user>img {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    .nav__user-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 190px;
+        text-align: center;
+        margin: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .nav__user-datos>button {
+        width: 110px;
+        margin: auto;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        border-radius: 5em;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(52, 52, 52);
+
+    }
+
+    button:active {
+        background-color: rgb(55, 37, 37);
+    }
+    .open__menu li {
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+    .nav__logo>img {
+        width: 80px;
+    }
+
+    .nav__logo>p {
+        font-size: 25px;
+        
+    }
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .nav__logo img {
+        width: 70px;
+        padding: 0 0 0 10px;
+        transition: all 0.3s;
+        /*border-radius: 45%;*/
+    }
+
+    .nav__logo>img:hover {
+        transform: scale(1.2);
+    }
+
+    .nav__logo > p{
+        font-size:10px;
+        padding: 10px 0 0 0;
+        color: white;
+    }
+
+    .nav__user>img {
+        width: 50px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .nav__user p{
+        color: white;
+    }
+
+    .nav__links {
+        display: none;
+        background-color: #317079;
+        padding-top: 0;
+        margin-top: 0;
+
+        /* width: 200px; */
+        /* margin: auto 0 auto auto; */
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    .nav {
+        /* background-color: rgb(93, 112, 112); */
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        min-height: 75px;
+        grid-template-rows: 85px;
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+
+    .nav_toogle {
+        padding: 0 3% 0 0;
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+        cursor: pointer;
+        margin-right: 3vw;
+    }
+
+    .nav_toogle span {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+
+
+    .nav_toogle.open>span:nth-child(1) {
+        transform: rotate(45deg) translate(0, 0);
+    }
+
+    .nav_toogle.open>span:nth-child(2) {
+        display: none;
+    }
+
+    .nav_toogle.open>span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+    .nav_items.open {
+        transform: translateX(0) !important;
+    }
+
+    .nav_items.open {
+        position: relative;
+    }
+
+    .nav__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: .4fr 1fr 50px;
+        grid-template-rows: 85px;
+        justify-content: space-between;
+        background-color: #317079;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        height: 80px;
+    }
+
+    .nav__logo>p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /*font-family: var(--titulo1);*/
+        font-size: 25px
+    }
+
+    .open__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .open__menu li {
+        margin: auto;
+        padding: 5px;
+        color: rgb(7, 7, 7);
+        font-size: 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+
+}
+
+
+.pointer{
+    cursor: pointer;
+}

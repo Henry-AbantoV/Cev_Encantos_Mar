@@ -1,0 +1,48 @@
+.container_ct{
+    color: white;
+}
+
+
+
+
+.producto_color{
+    display: flex;
+    flex-direction: column;
+    width:280px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+    color: #1d234d;
+    border-radius: 1em;
+    border-width: 3px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    box-shadow: 8px 5px 10px rgb(73, 71, 71);
+    margin: auto;
+}
+
+.producto__info-datoss{
+    gap: 10px;
+    margin: auto;
+    color: black;
+}
+
+.producto__info-datoss:nth-child(1)>b:nth-child(2){
+    text-decoration: line-through;
+}
+
+.producto__image>img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.producto__image> img:hover{
+    transform: scale(1.1)
+}
+
+.producto__info{
+    height: min-content;
+}

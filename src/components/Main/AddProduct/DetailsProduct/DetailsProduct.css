@@ -1,0 +1,110 @@
+.producto {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+    height: 700px;
+    padding: 1em;
+    gap: 20px;
+    color: #151515;
+    border-radius: 1em;
+    border-width: 3px;
+    box-shadow: 0px 10px 10px rgb(79, 79, 79);
+    background-image: linear-gradient(to right, rgba(6, 27, 27,.1), rgba(42, 128, 109,.1));
+}
+
+.producto__tilte {
+    text-align: center;
+}
+
+.container_producto-info {
+    /* border: 1px solid white; */
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: max-content;
+    min-width: 250px;
+    margin: auto;
+    gap: 10px;
+}
+
+
+
+
+.producto__img {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto__img>img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.producto__info {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* width: max-content; */
+    /* max-width: max-content; */
+    min-width: min-content;
+    padding: 0 0 5px 0;
+    gap: 10px;
+}
+
+
+.producto__info-datos {
+    display: flex;
+    /* border: 1px solid blue; */
+    flex-wrap: wrap;
+}
+
+.producto__info-datos>p {
+    display: flex;
+    justify-content: center;
+    color: #a69f9f;
+}
+
+.btn_producto {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn_producto>button:nth-child(1) {
+    background-color: rgb(6, 6, 128);
+    color: #fff;
+    padding: 2px 8px 2px 8px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.btn_producto>button:nth-child(2) {
+    background-color: rgb(126, 26, 17);
+    color: #fff;
+    padding: 2px 8px 2px 8px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .container_producto-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .producto__img>img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .producto {
+        width: 90%;
+        height: max-content;
+    }  
+}

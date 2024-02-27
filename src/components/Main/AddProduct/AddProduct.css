@@ -1,0 +1,42 @@
+
+
+
+.btn__agregar{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.btn__agregar > button {
+    margin-right: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5em;
+    cursor: pointer;
+    padding: 0 1em 0 1em;
+    margin-top: 1em;
+}
+
+.main__nav{
+    background-color: blue;
+    /* height: 100px; */
+}
+
+
+.container__form{
+    display: block;
+    margin: auto;
+}
+
+
+.container__empleado-general{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
