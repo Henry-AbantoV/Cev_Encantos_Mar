@@ -1,0 +1,20 @@
+.card {
+    border: 4px solid #00BFFF; /* Contorno celeste */
+    background-color: #448194; /* Fondo rojo */
+    width: 800px; /* Tamaño de 200px */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    border-radius: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }

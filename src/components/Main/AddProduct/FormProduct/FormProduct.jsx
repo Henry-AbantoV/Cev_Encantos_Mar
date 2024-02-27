@@ -146,38 +146,24 @@ const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObt
                                     Sin/categoria
                                 </label>
                                 <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Adaptadores" />
-                                    Adaptadores
+                                    <input type="radio" {...register('categoria', { required: true })} value="Ceviches" />
+                                    Ceviches
                                 </label>
                                 <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Audifonos_inalambricos" />
-                                    Audifonos/inalambricos
+                                    <input type="radio" {...register('categoria', { required: true })} value="Jaleas" />
+                                    Jaleas
                                 </label>
                                 <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Cables" />
-                                    Cables
+                                    <input type="radio" {...register('categoria', { required: true })} value="Sudados" />
+                                    Sudados
                                 </label>
                                 <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Calculadoras" />
-                                    Calculadoras
+                                    <input type="radio" {...register('categoria', { required: true })} value="Parihuelas" />
+                                    Parihuelas
                                 </label>
                                 <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Tomacorrientes_Estabilizadoresrtas" />
-                                    Tomacorrientes/Estabilizadores
-                                </label>
-                                <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Bombillas" />
-                                    Bombillas
-                                </label>
-
-                                <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="mouse" />
-                                    Mouse
-                                </label>
-
-                                <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Microfono" />
-                                    Microfono
+                                    <input type="radio" {...register('categoria', { required: true })} value="Marisqueria" />
+                                    Marisqueria
                                 </label>
 
                             </li>

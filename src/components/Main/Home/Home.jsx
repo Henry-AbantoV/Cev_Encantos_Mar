@@ -26,39 +26,26 @@ const Home = () => {
     setHeaderLink('Sin_categoria')
   }
 
-  const Adaptadores = () => {
-    setHeaderLink('Adaptadores')
+  const Ceviches = () => {
+    setHeaderLink('Ceviches')
   }
 
-  const Audifonos_inalambricos = () => {
-    setHeaderLink('Audifonos_inalambricos')
+  const Jaleas = () => {
+    setHeaderLink('Jaleas')
   }
 
-  const Cables = () => {
-    setHeaderLink('Cables')
+  const Sudados = () => {
+    setHeaderLink('Sudados')
   }
 
-  const Calculadoras = () => {
-    setHeaderLink('Calculadoras')
+  const Parihuelas = () => {
+    setHeaderLink('Parihuelas')
   }
 
-  const mouse = () => {
-    setHeaderLink('mouse')
+  const Marisqueria = () => {
+    setHeaderLink('Marisqueria')
   }
 
-
-  const Tomacorrientes_Estabilizadoresrtas = () => {
-    setHeaderLink('Tomacorrientes_Estabilizadoresrtas')
-  }
-
-
-  const Bombillas = () => {
-    setHeaderLink('Bombillas')
-  }
-
-  const Microfono = () => {
-    setHeaderLink('Microfono')
-  }
 
   const [inputValue, setInputValue] = useState('');
 
@@ -80,14 +67,11 @@ const Home = () => {
       <div className='nav_header_home'>
         <ul className='ul_header_home'>
           <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Sin_categoria' ? 'blue' : 'black'}` }} onClick={Sin_categoria} className='li_header_home'>Sin categoria</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Adaptadores' ? 'blue' : 'black'}` }} onClick={Adaptadores} className='li_header_home'>Adaptadores</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Audifonos_inalambricos' ? 'blue' : 'black'}` }} onClick={Audifonos_inalambricos} className='li_header_home'>Audifonos inalambricos</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Microfono' ? 'blue' : 'black'}` }} onClick={Microfono} className='li_header_home'>Microfono</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Cables' ? 'blue' : 'black'}` }} onClick={Cables} className='li_header_home'>Cables</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Calculadoras' ? 'blue' : 'black'}` }} onClick={Calculadoras} className='li_header_home'>Calculadoras</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Tomacorrientes_Estabilizadoresrtas' ? 'blue' : 'black'}` }} onClick={Tomacorrientes_Estabilizadoresrtas} className='li_header_home'>Tomacorrientes/Estabilizadores</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Bombillas' ? 'blue' : 'black'}` }} onClick={Bombillas} className='li_header_home'>Bombillas</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'mouse' ? 'blue' : 'black'}` }} onClick={mouse} className='li_header_home'>Mouse</li>
+          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Ceviches' ? 'blue' : 'black'}` }} onClick={Ceviches} className='li_header_home'>Ceviches</li>
+          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Jaleas' ? 'blue' : 'black'}` }} onClick={Jaleas} className='li_header_home'>Jaleas</li>
+          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Sudados' ? 'blue' : 'black'}` }} onClick={Sudados} className='li_header_home'>Sudados</li>
+          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Parihuelas' ? 'blue' : 'black'}` }} onClick={Parihuelas} className='li_header_home'>Parihuelas</li>
+          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Marisquería' ? 'blue' : 'black'}` }} onClick={Marisqueria} className='li_header_home'>Marisquería</li>
         </ul>
       </div>
 
@@ -134,11 +118,11 @@ const Home = () => {
                 }
               </div>
               :
-              headerLink === "Adaptadores" ?
+              headerLink === "Ceviches" ?
                 <div className='container_categorias'>
                   {
                     data && data.map(data => (
-                      data.categoria === 'Adaptadores' ?
+                      data.categoria === 'Ceviches' ?
                         <ComprarTodo
                           key={data?.id}
                           data={data}
@@ -150,11 +134,11 @@ const Home = () => {
                   }
                 </div>
                 :
-                headerLink === "Audifonos_inalambricos" ?
+                headerLink === "Jaleas" ?
                   <div className='container_categorias'>
                     {
                       data && data.map(data => (
-                        data.categoria === 'Audifonos_inalambricos' ?
+                        data.categoria === 'Jaleas' ?
                           <ComprarTodo
                             key={data?.id}
                             data={data}
@@ -166,11 +150,11 @@ const Home = () => {
                     }
                   </div>
                   :
-                  headerLink === "Cables" ?
+                  headerLink === "Sudados" ?
                     <div className='container_categorias'>
                       {
                         data && data.map(data => (
-                          data.categoria === 'Cables' ?
+                          data.categoria === 'Sudados' ?
                             <ComprarTodo
                               key={data?.id}
                               data={data}
@@ -182,11 +166,11 @@ const Home = () => {
                       }
                     </div>
                     :
-                    headerLink === "Calculadoras" ?
+                    headerLink === "Parihuelas" ?
                       <div className='container_categorias'>
                         {
                           data && data.map(data => (
-                            data.categoria === 'Calculadoras' ?
+                            data.categoria === 'Parihuelas' ?
                               <ComprarTodo
                                 key={data?.id}
                                 data={data}
@@ -198,11 +182,11 @@ const Home = () => {
                         }
                       </div>
                       :
-                      headerLink === "Tomacorrientes_Estabilizadoresrtas" ?
+                      headerLink === "Marisqueria" ?
                         <div className='container_categorias'>
                           {
                             data && data.map(data => (
-                              data.categoria === 'Tomacorrientes_Estabilizadoresrtas' ?
+                              data.categoria === 'Marisqueria' ?
                                 <ComprarTodo
                                   key={data?.id}
                                   data={data}
@@ -214,56 +198,8 @@ const Home = () => {
                           }
                         </div>
                         :
-                        headerLink === "Bombillas" ?
-                          <div className='container_categorias'>
-                            {
-                              data && data.map(data => (
-                                data.categoria === 'Bombillas' ?
-                                  <ComprarTodo
-                                    key={data?.id}
-                                    data={data}
-                                  />
-                                  :
-                                  null
 
-                              ))
-                            }
-                          </div>
-                          :
-                          headerLink === "mouse" ?
-                            <div className='container_categorias'>
-                              {
-                                data && data.map(data => (
-                                  data.categoria === 'mouse' ?
-                                    <ComprarTodo
-                                      key={data?.id}
-                                      data={data}
-                                    />
-                                    :
-                                    null
-
-                                ))
-                              }
-                            </div>
-                            :
-                            headerLink === "Microfono" ?
-                              <div className='container_categorias'>
-                                {
-                                  data && data.map(data => (
-                                    data.categoria === 'Microfono' ?
-                                      <ComprarTodo
-                                        key={data?.id}
-                                        data={data}
-                                      />
-                                      :
-                                      null
-
-                                  ))
-                                }
-                              </div>
-                              :
-
-                              ''
+                        ''
         }
       </div>
 
