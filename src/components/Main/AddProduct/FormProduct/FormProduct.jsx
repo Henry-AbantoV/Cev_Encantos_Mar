@@ -11,7 +11,7 @@ import useSubirImage from '../../../../Hooks/useSubirImage';
 
 
 const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObtenerData }) => {
-    const URL = "https://65c2e3fdf7e6ea59682bc40a.mockapi.io/Producto"
+    const URL = "https://65dcf122e7edadead7ed26d9.mockapi.io/Product"
     const { image, btnSubir } = useSubirImage('dp3njcqhi', 'empleados')
     const { register, handleSubmit, reset } = useForm(); //recibimos los valores del formulario y las funciones para manejarlos
     const { uploadData, createData } = usePost(URL)

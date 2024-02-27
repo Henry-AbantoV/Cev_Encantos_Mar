@@ -4,7 +4,7 @@ import useDelete from '../../../../Hooks/useDelete'
 import './DetailsProduct.css'
 
 const DetailsProduct = ({ data, setIsOpenModal, setObtenerData, getData }) => {
-    const URL = 'https://65c2e3fdf7e6ea59682bc40a.mockapi.io/Producto'
+    const URL = 'https://65dcf122e7edadead7ed26d9.mockapi.io/Product'
 
     const modificarProducto = () => {
         setIsOpenModal(true)
