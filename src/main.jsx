@@ -5,7 +5,6 @@ import './index.css'
 import { Auth0Provider } from '@auth0/auth0-react'
 import { HashRouter } from 'react-router-dom'
 
-// npm install @auth0/auth0-react    ->para autenticación
 
 const domain = "dev-kubvfpktkd08timt.us.auth0.com"
 const clientId = "rwf6oc21cbD9RIXSArKjyHgzSVZXL9gp"

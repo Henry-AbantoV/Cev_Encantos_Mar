@@ -30,12 +30,13 @@ const Header = ({ isOpen, setIsOpen }) => {
 
                 {
 
-                    // isAuthenticated === 'areyesf20_2@unc.edu.pe'?
-                    user?.email === 'jdelacruzp20_2@unc.edu.pe'
-                        || user?.email === 'areyesf20_2@unc.edu.pe'
+                   
+                           user?.email === 'havilav20_2@unc.edu.pe'
+                        || user?.email === 'earribasplatap19_2@unc.edu.pe'
                         || user?.email === 'eabantov20_1@unc.edu.pe'
-                        || user?.email === 'agarciac20_2@unc.edu.pe'
-                        || user?.email === 'ycaruajulcad20_2@unc.edu.pe'
+                        || user?.email === 'adarcec18_2@unc.edu.pe'
+                        || user?.email === 'barcea16_1@unc.edu.pe'
+                        || user?.email === 'ebecerram20_1@unc.edu.pe'
                         ?
                         <li> <Link to='/add-product'>Add product</Link> </li>
                         :
