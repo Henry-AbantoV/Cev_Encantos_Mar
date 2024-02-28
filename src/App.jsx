@@ -9,11 +9,14 @@ import Sobre_nosotros from './components/Main/SobreNosotros/Sobre_nosotros'
 import Error404 from './components/Error404'
 import AddProduct from "./components/Main/AddProduct/AddProduct";
 import Contacto from "./components/Main/Contacto/Contacto";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
+
+  const {  user } = useAuth0();
 
   return (
     <>
@@ -28,7 +31,18 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/sobre-nosotros' element={<Sobre_nosotros />} />
             <Route path='/contacto' element={<Contacto />} />
-            <Route path='/add-product' element={<AddProduct />} />
+         
+            {
+              user?.email === 'jdelacruzp20_2@unc.edu.pe'
+              ||  user?.email === 'areyesf20_2@unc.edu.pe'
+              ||  user?.email === 'eabantov20_1@unc.edu.pe'
+              ||  user?.email === 'agarciac20_2@unc.edu.pe'
+              ||  user?.email === 'ycaruajulcad20_2@unc.edu.pe'
+              ?
+              <Route path='/add-product' element={<AddProduct />} />
+              :
+              <Route path='/*' element={<Error404 />} />
+            }
 
             <Route path='/*' element={<Error404 />} />
           </Routes>

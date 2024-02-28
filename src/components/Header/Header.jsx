@@ -26,8 +26,22 @@ const Header = ({ isOpen, setIsOpen }) => {
             <div className={`nav__links ${isOpen && "open__menu mt-5"} `} onClick={() => setIsOpen(false)} >
                 <li> <Link to='/'>Inicio</Link> </li>
                 <li> <Link to='/sobre-nosotros'>Acerca de</Link> </li>
-                <li> <Link to='/contacto'>Contacto</Link> </li>     
-                <li> <Link to='/add-product'>Add product</Link> </li>
+                <li> <Link to='/contacto'>Contacto</Link> </li>
+
+                {
+
+                    // isAuthenticated === 'areyesf20_2@unc.edu.pe'?
+                    user?.email === 'jdelacruzp20_2@unc.edu.pe'
+                        || user?.email === 'areyesf20_2@unc.edu.pe'
+                        || user?.email === 'eabantov20_1@unc.edu.pe'
+                        || user?.email === 'agarciac20_2@unc.edu.pe'
+                        || user?.email === 'ycaruajulcad20_2@unc.edu.pe'
+                        ?
+                        <li> <Link to='/add-product'>Add product</Link> </li>
+                        :
+                        ''
+                }
+
             </div>
 
 

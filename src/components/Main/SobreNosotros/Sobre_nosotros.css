@@ -1,20 +1,66 @@
+.AcercaDe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../image/fondoAcercaDe.jpeg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+}
+
 .card {
-    border: 4px solid #00BFFF; /* Contorno celeste */
-    background-color: #448194; /* Fondo rojo */
-    width: 800px; /* Tamaño de 200px */
-    margin-bottom: 20px; /* Espacio entre las tarjetas */
-    border-radius: 20px;
-  }
-  
-  .card img {
+  border: 4px solid #00BFFF;
+  background-color: #448194;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title_acerca {
+  color: aquamarine;
+  text-shadow: #00BFFF;
+}
+
+.title_about {
+  color: aqua;
+}
+
+.card-text {
+  color: aqua;
+}
+
+@media only screen and (max-width: 1500px) {
+  .card {
     width: 100%;
+    max-width: 600px;
   }
-  
-  .card-body {
-    padding: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+    max-width: 400px;
   }
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
   }
+}
