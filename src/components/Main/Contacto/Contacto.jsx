@@ -66,11 +66,11 @@ const FormContacto = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setOb
                         <div className='container__datos-datos'>
                             <li className='form__item'>
                                 <label htmlFor="name">Ingrese su nombre:</label>
-                                <input {...register('name')} type="text" id='name' placeholder=' Ingresar nombre' required />
+                                <input {...register('name')} type="text" id='name' placeholder=' e.g Jose Perez' required />
                             </li>
                             <li className='form__item'>
                                 <label htmlFor="email">Ingrese su correo:</label>
-                                <input {...register('email')} type="email" id='email' placeholder=' Ingresar correo' required />
+                                <input {...register('email')} type="email" id='email' placeholder='e.g alicia2k@gmail.com' required />
                             </li>
                             <li className='form__item'>
                                 <label htmlFor="dni">Ingrese DNI:</label>
@@ -88,14 +88,15 @@ const FormContacto = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setOb
                             </li>
                             <li className='form__item'>
                                 <label htmlFor="phone">Ingrese Telefono:</label>
-                                <input {...register('phone')} type="number" id='phone' placeholder=' Ingresar número de telefono' required />
+                                <input {...register('phone')} type="number" id='phone' placeholder=' e.g 956789009' required />
                             </li>
 
                             <li className='form__item'>
                                 <label htmlFor="address">Dirección:</label>
-                                <input {...register('address')} type="text" id='address' placeholder=' Ingresar direción' required />
+                                <input {...register('address')} type="text" id='address' placeholder=' e.g av. san martin 456' required />
                             </li>
-
+                            
+                            <button type="button" class="btn"> <a href="#" >Enviar</a></button>
                         </div>
 
 

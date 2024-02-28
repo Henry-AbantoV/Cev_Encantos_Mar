@@ -9,6 +9,8 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
+    
+    background-image: url('../../../image/fondoScreen.jpeg');
 }
 
 
@@ -116,7 +118,7 @@ a > .img{
 }
 
 .form__item {
-    display: flex;
+    display: inline-block;
     width: 100%;
     flex-wrap: wrap;
     gap: 10px;
@@ -152,7 +154,7 @@ input:focus {
   
   /* Estilo personalizado para el círculo cuando está marcado (seleccionado) */
   input[type="radio"]:checked {
-    background-color: #0d0f62; /* Cambiar el color del fondo del círculo cuando está marcado */
+    background-color: #e460ab; /* Cambiar el color del fondo del círculo cuando está marcado */
    
   }
 
@@ -160,35 +162,72 @@ input:focus {
     width: 60%;
     min-width: 190px;
     opacity: 0.6;
-    border-bottom: 3px solid rgb(85, 85, 238);
+    border-bottom: 3px solid rgb(209, 115, 181);
 }
 
 
-
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-    .form__datos {
-        margin-top: 1em;
-    }
-
+@media only screen and (max-width: 480px) {
+    /* Estilos CSS específicos para pantallas pequeñas */
     .form__datos-foto {
-        width: 40%;
-
+      width: 100%;
     }
-
     .form__datos-datos {
-        width: 90vw;
-        padding: 1em;
+      width: 100%;
     }
-
-    .container__datos-datos {
-        padding: 0;
+    .form__item>input {
+      width: 100%;
     }
+    .btn{
+        background: #cc7aaa;
+    }
+  }
 
-}
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Estilos CSS específicos para pantallas medianas */
+    .form__datos-foto {
+      width: 50%;
+    }
+    .form__datos-datos {
+      width: 50%;
+    }
+    .form__item>input {
+      width: 100%;
+    }
+    .btn{
+        background: #cc7aaa;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos CSS específicos para pantallas grandes */
+    .form__datos-foto {
+      width: 40%;
+    }
+    .form__datos-datos {
+      width: 60%;
+    }
+    .form__item>input {
+      width: 100%;
+    }
+    .btn{
+        background: #cc7aaa;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    /* Estilos CSS específicos para pantallas muy grandes */
+    .form__datos-foto {
+      width: 40%;
+    }
+    .form__datos-datos {
+      width: 60%;
+    }
+    .form__item>input {
+      width: 60%;
+      min-width: 190px;
+    }
+    .btn{
+        background: #cc7aaa;
+    }
+  }
+
 
