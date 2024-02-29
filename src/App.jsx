@@ -11,6 +11,8 @@ import AddProduct from "./components/Main/AddProduct/AddProduct";
 import Contacto from "./components/Main/Contacto/Contacto";
 import { useAuth0 } from "@auth0/auth0-react";
 
+import CookieBanner from './CookieBanner';
+
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
 
         <header>
           <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+          <CookieBanner /> {/* Render the CookieBanner component */}
+        
         </header>
 
         <main onClick={() => setIsOpen(false)}>
