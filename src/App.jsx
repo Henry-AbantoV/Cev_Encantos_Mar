@@ -20,6 +20,7 @@ function App() {
 
   const {  user } = useAuth0();
 
+  console.log(user);
   return (
     <>
       <div className='container__app'>

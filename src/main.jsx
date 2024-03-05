@@ -6,8 +6,8 @@ import { Auth0Provider } from '@auth0/auth0-react'
 import { HashRouter } from 'react-router-dom'
 
 
-const domain = "dev-kubvfpktkd08timt.us.auth0.com"
-const clientId = "rwf6oc21cbD9RIXSArKjyHgzSVZXL9gp"
+const domain = "dev-slumlylgdxl2xofb.us.auth0.com"
+const clientId = "mWRnuz6eZo0TbGg6ounEsR6sztPvsykU"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
