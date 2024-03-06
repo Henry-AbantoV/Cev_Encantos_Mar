@@ -18,11 +18,10 @@ const Sobre_nosotros = () => {
 
         <div className="row mt-5">
           <div className="col-md-4">
-            {/* Imagen */}
+
             <Card.Img variant="top" src={ftAcercaDe} alt="Imagen" />
           </div>
           <div className="col-md-8">
-            {/* Tarjeta 1 */}
             <Card>
               <Card.Body>
                 <Card.Title>Misión</Card.Title>
@@ -53,45 +52,43 @@ const Sobre_nosotros = () => {
           </div>
         </div>
 
-        <div>
-          <h3 className='title_about text-center'>Nuestros servicios</h3>
-
-          <div className="row">
-            <div className="col-sm-3">
-              <div className="cards">
-                <div className="card-body">
-                  <p className="card-text">Servicio Delivery</p>
-                  <img className='d-flex align-items-center d-block img-fluid' src={ftDelivery} alt="" width={100} height={150} />
-                </div>
+        <h3 className='title_about text-center'>Nuestros servicios</h3>
+        <div className="row">
+          <div className="col-sm-3">
+            <div className="servicio-card">
+              <div className="card-body">
+                <p className="card-text">Servicio Delivery</p>
+                <img className='d-flex align-items-center d-block img-fluid' src={ftDelivery} alt="Servicio Delivery" width={100} />
               </div>
             </div>
-            <div className="col-sm-3">
-              <div className="cards">
-                <div className="card-body">
-                  <p className="card-text">Devoluciones</p>
-                  <img className='d-flex align-items-center d-block img-fluid' src={ftCambios} alt="" width={100} height={120} />
-                </div>
+          </div>
+          <div className="col-sm-3">
+            <div className="servicio-card">
+              <div className="card-body">
+                <p className="card-text">Devoluciones</p>
+                <img className='d-flex align-items-center d-block img-fluid' src={ftCambios} alt="Devoluciones" width={100} />
               </div>
             </div>
-            <div className="col-sm-3">
-              <div className="cards">
-                <div className="card-body">
-                  <p className="card-text">Promociones</p>
-                  <img className='d-flex align-items-center d-block img-fluid' src={ftPromos} alt="" width={130} height={400} />
-                </div>
+          </div>
+          <div className="col-sm-3">
+            <div className="servicio-card">
+              <div className="card-body">
+                <p className="card-text">Promociones</p>
+                <img className='d-flex align-items-center d-block img-fluid' src={ftPromos} alt="Promociones" width={125} />
               </div>
             </div>
-            <div className="col-sm-3">
-              <div className="cards">
-                <div className="card-body">
-                  <p className="card-text">12 horas de atención</p>
-                  <img className='d-flex align-items-center d-block img-fluid' src={ftAtencion} alt="" width={100} height={70} />
-                </div>
+          </div>
+          <div className="col-sm-3">
+            <div className="servicio-card">
+              <div className="card-body">
+                <p className="card-text">12 horas de atención</p>
+                <img className='d-flex align-items-center d-block img-fluid' src={ftAtencion} alt="12 horas de atención" width={100} />
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </>
   )
 }
