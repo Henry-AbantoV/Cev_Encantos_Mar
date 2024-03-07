@@ -30,8 +30,8 @@ const Home = () => {
     setHeaderLink('Ceviches')
   }
 
-  const Jaleas = () => {
-    setHeaderLink('Jaleas')
+  const Combos = () => {
+    setHeaderLink('Combos')
   }
 
   const Sudados = () => {
@@ -68,7 +68,7 @@ const Home = () => {
         <ul className='ul_header_home'>
           <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Sin_categoria' ? 'blue' : 'black'}` }} onClick={Sin_categoria} className='li_header_home'>Sin categoria</li>
           <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Ceviches' ? 'blue' : 'black'}` }} onClick={Ceviches} className='li_header_home'>Ceviches</li>
-          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Jaleas' ? 'blue' : 'black'}` }} onClick={Jaleas} className='li_header_home'>Combos marinos</li>
+          <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Combos' ? 'blue' : 'black'}` }} onClick={Combos} className='li_header_home'>Combos marinos</li>
           <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Sudados' ? 'blue' : 'black'}` }} onClick={Sudados} className='li_header_home'>Sudados</li>
           <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Parihuelas' ? 'blue' : 'black'}` }} onClick={Parihuelas} className='li_header_home'>Parihuelas</li>
           <li style={{ fontFamily: 'Roboto', fontWeight: 600, color: `${headerLink === 'Marisquería' ? 'blue' : 'black'}` }} onClick={Marisqueria} className='li_header_home'>Marisquería</li>
