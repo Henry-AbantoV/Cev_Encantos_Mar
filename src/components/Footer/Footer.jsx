@@ -21,12 +21,12 @@ const Footer = () => {
                     </a>
                 </b>
                 <b>
-                    <a className='s' href="https://www.tiktok.com/@kasiquestechnology?_t=8jCSK1rMpa1&_r=1" target="_blank" rel="noopener noreferrer">
+                    <a className='s' href="https://www.tiktok.com/@cevicheriaencantosdelmar" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-tiktok"></i> 
                     </a>
                 </b>
                 <b>
-                    <a className='s' href="https://www.instagram.com/kasiquestechnology/" target="_blank" rel="noopener noreferrer">
+                    <a className='s' href="https://www.instagram.com/cevicheria_encantos_del_mar/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-instagram"></i> 
                     </a>
                 </b>
