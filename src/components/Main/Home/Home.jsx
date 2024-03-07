@@ -60,7 +60,7 @@ const Home = () => {
     <div className='home'>
 
       <b>
-        <a href="https://api.whatsapp.com/send?phone=51917208945&text=https://encantosdelmar.netlify.app//%0AHola,%20estoy%20interesado%20deseo%20obtener%20más%20información%20" target="_blank" rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com/send?phone=51924282218&text=https://encantosdelmar.netlify.app//%0AHola,%20estoy%20interesado%20deseo%20obtener%20más%20información%20" target="_blank" rel="noopener noreferrer">
           <div className='contactanos_flotante'><Whatsapp color="rgb(86, 253, 108)" size={24} />Contactanos</div> </a>
       </b>
 

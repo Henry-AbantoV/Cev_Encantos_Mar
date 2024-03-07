@@ -1,233 +1,272 @@
 .form__container {
-    top: 0;
-    z-index: 1;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    
-    background-image: url('../../../image/fondoScreen.jpeg');
+  top: 0;
+  z-index: 1;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+
+  background-image: url('../../../image//fondoscreen.jpg');
+  background-size: 100vw auto;
+  /* This will make sure the image covers the whole element */
+  background-position: center;
+  /* This will horizontally and vertically center the image */
+  background-attachment: fixed;
 }
 
 
 
+.carousel-container {
+  flex: 1;
+  /* Ajusta la proporción del carrusel */
+  margin-right: 20px;
+  /* Agrega un margen a la derecha del carrusel */
+}
+
+.form-container {
+  flex: 1;
+  /* Ajusta la proporción del formulario */
+}
+
 .form {
-    background-color: rgb(75, 129, 149);
-    color: #fff;
-    width: 93vw;
-    max-width: 800px;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1em;
+  background-color: rgb(75, 129, 149);
+  color: #fff;
+  width: 93vw;
+  max-width: 800px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
 }
 
 .form__tile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .form__title-title {
-    width: 85%;
-    height: max-content;
+  width: 85%;
+  height: max-content;
 }
 
 .form__title-title>h3 {
-    text-align: center;
+  text-align: center;
 }
 
 
 .form__title-x {
-    width: 15%;
+  width: 15%;
 }
 
 .form__title-x>h1 {
-    text-align: center;
-    cursor: pointer;
+  text-align: center;
+  cursor: pointer;
 }
 
 
 
 .form__datos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
 .form__datos-foto {
-    width: 40%;
-    min-width: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    gap: 3vh;
-   
+  width: 40%;
+  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 3vh;
+
 }
 
 .form__datos-foto>img {
-    padding: 1px;
-    width: 50%;
-    border-radius: 50%;
-    object-fit: cover;
+  padding: 1px;
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .form__datos-foto>img {
-    padding: 1px;
-    width: 50%;
+  padding: 1px;
+  width: 50%;
 }
 
-a > .img{
-    padding: 1px;
-    width: 50%;
-    border-radius: 50%;
-    object-fit: cover;
+a>.img {
+  padding: 1px;
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .form__datos-foto>h6 {
-    background-color: #262785;
-    padding: .8em;
-    border-radius: 1em  ;
+  background-color: #262785;
+  padding: .8em;
+  border-radius: 1em;
 }
 
 .form__datos-foto>p {
-    padding: 3px;
-    width: max-content;
+  padding: 3px;
+  width: max-content;
 }
 
 
 .form__datos-datos {
-    width: 60%;
-    min-width: 199px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  width: 60%;
+  min-width: 199px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .container__datos-datos {
-    padding: 1em 1em 1em 0;
-    margin: auto;
+  padding: 1em 1em 1em 0;
+  margin: auto;
 
 }
 
 .form__item {
-    display: inline-block;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 4px 0 4px 0;
+  display: inline-block;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 4px 0 4px 0;
 }
 
-input{
-    outline: 'none';
-    border: none;
+input {
+  outline: 'none';
+  border: none;
 }
 
-input::placeholder{
-    color: rgb(209, 203, 203);
+input::placeholder {
+  color: rgb(209, 203, 203);
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
- input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #555; /* Color del borde */
-    background-color: rgb(140, 133, 133); /* Color del fondo del círculo */
-    margin-right: 5px;
-    vertical-align: middle;
-    border: 1px solid rgb(255, 255, 255);
-  }
-  
-  /* Estilo personalizado para el círculo cuando está marcado (seleccionado) */
-  input[type="radio"]:checked {
-    background-color: #e460ab; /* Cambiar el color del fondo del círculo cuando está marcado */
-   
-  }
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  /* Color del borde */
+  background-color: rgb(140, 133, 133);
+  /* Color del fondo del círculo */
+  margin-right: 5px;
+  vertical-align: middle;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* Estilo personalizado para el círculo cuando está marcado (seleccionado) */
+input[type="radio"]:checked {
+  background-color: #e460ab;
+  /* Cambiar el color del fondo del círculo cuando está marcado */
+
+}
 
 .form__item>input {
-    width: 60%;
-    min-width: 190px;
-    opacity: 0.6;
-    border-bottom: 3px solid rgb(209, 115, 181);
+  width: 60%;
+  min-width: 190px;
+  opacity: 0.6;
+  border-bottom: 3px solid rgb(209, 115, 181);
 }
+
+
 
 
 @media only screen and (max-width: 480px) {
-    /* Estilos CSS específicos para pantallas pequeñas */
-    .form__datos-foto {
-      width: 100%;
-    }
-    .form__datos-datos {
-      width: 100%;
-    }
-    .form__item>input {
-      width: 100%;
-    }
-    .btn{
-        background: #cc7aaa;
-    }
+
+  /* Estilos CSS específicos para pantallas pequeñas */
+  .form__datos-foto {
+    width: 100%;
   }
 
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* Estilos CSS específicos para pantallas medianas */
-    .form__datos-foto {
-      width: 50%;
-    }
-    .form__datos-datos {
-      width: 50%;
-    }
-    .form__item>input {
-      width: 100%;
-    }
-    .btn{
-        background: #cc7aaa;
-    }
+  .form__datos-datos {
+    width: 100%;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Estilos CSS específicos para pantallas grandes */
-    .form__datos-foto {
-      width: 40%;
-    }
-    .form__datos-datos {
-      width: 60%;
-    }
-    .form__item>input {
-      width: 100%;
-    }
-    .btn{
-        background: #cc7aaa;
-    }
-  }
-  @media only screen and (min-width: 1024px) {
-    /* Estilos CSS específicos para pantallas muy grandes */
-    .form__datos-foto {
-      width: 40%;
-    }
-    .form__datos-datos {
-      width: 60%;
-    }
-    .form__item>input {
-      width: 60%;
-      min-width: 190px;
-    }
-    .btn{
-        background: #cc7aaa;
-    }
+  .form__item>input {
+    width: 100%;
   }
 
+  .btn {
+    background: #cc7aaa;
+  }
+}
 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  /* Estilos CSS específicos para pantallas medianas */
+  .form__datos-foto {
+    width: 50%;
+  }
+
+  .form__datos-datos {
+    width: 50%;
+  }
+
+  .form__item>input {
+    width: 100%;
+  }
+
+  .btn {
+    background: #cc7aaa;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* Estilos CSS específicos para pantallas grandes */
+  .form__datos-foto {
+    width: 40%;
+  }
+
+  .form__datos-datos {
+    width: 60%;
+  }
+
+  .form__item>input {
+    width: 100%;
+  }
+
+  .btn {
+    background: #cc7aaa;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /* Estilos CSS específicos para pantallas muy grandes */
+  .form__datos-foto {
+    width: 40%;
+  }
+
+  .form__datos-datos {
+    width: 60%;
+  }
+
+  .form__item>input {
+    width: 60%;
+    min-width: 190px;
+  }
+
+  .btn {
+    background: #cc7aaa;
+  }
+ 
+  
+}
