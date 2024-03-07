@@ -150,8 +150,8 @@ const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObt
                                     Ceviches
                                 </label>
                                 <label>
-                                    <input type="radio" {...register('categoria', { required: true })} value="Jaleas" />
-                                    Jaleas
+                                    <input type="radio" {...register('categoria', { required: true })} value="Combos" />
+                                   Combos
                                 </label>
                                 <label>
                                     <input type="radio" {...register('categoria', { required: true })} value="Sudados" />
