@@ -25,7 +25,7 @@ a{
     }
 
     .footer__section a i {
-        font-size: 40px; /* Puedes ajustar el tamaño según tu preferencia */
+        font-size: 20px; /* Puedes ajustar el tamaño según tu preferencia */
         transition: all 0.3s;
     }
 
@@ -68,6 +68,7 @@ a{
     }
 }
 
+
 @media only screen and (max-width: 768px) {
     .footer {
         display: grid;
@@ -78,7 +79,7 @@ a{
     }
 
     .footer__section a i {
-        font-size: 30px; /* Puedes ajustar el tamaño según tu preferencia */
+        font-size: 20px; /* Puedes ajustar el tamaño según tu preferencia */
         transition: all 0.3s;
     }
 
@@ -88,6 +89,7 @@ a{
 
     .footer__section b{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
     }
 
     .footer__section {
@@ -95,8 +97,8 @@ a{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        align-content: center;
-        gap: 2px;
+        /*align-content: center;*/
+        gap: 10px;
     }
 
     .footer__section:nth-child(1) {
@@ -119,7 +121,8 @@ a{
 
     .footer__section:nth-child(2) > b{
         /* background-color: yellow; */
-        width: 230px;
+        /*width: 230px;*/
+        width: auto;
         text-align: center;
     }
 
@@ -131,9 +134,9 @@ a{
 
     .footer__section:nth-child(3) > b{
         /* background-color: yellow; */
-        width: 230px;
+        /*width: 230px;*/
+        width: auto;
         text-align: center;
     }
-
  
 }
