@@ -38,9 +38,9 @@ function App() {
             <Route path='/contacto' element={<Contacto />} />
          
             {
-                  user?.email === 'natalymedinasilva@gmail.com'
-              ||  user?.email === 'eabantov20_1@unc.edu.pe'
-              ?
+             user?.email === 'natalymedinasilva@gmail.com'
+             ||  user?.email === 'eabantov20_1@unc.edu.pe'
+             ?
               <Route path='/add-product' element={<AddProduct />} />
               :
               <Route path='/*' element={<Error404 />} />
