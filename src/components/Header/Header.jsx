@@ -29,8 +29,6 @@ const Header = ({ isOpen, setIsOpen }) => {
                 <li> <Link to='/contacto'>Contacto</Link> </li>
 
                 {
-
-
                         user?.email === 'natalymedinasilva@gmail.com'
                         || user?.email === 'eabantov20_1@unc.edu.pe'
                         || user?.email === 'henryave30@gmail.com'
