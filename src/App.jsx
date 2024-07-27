@@ -39,8 +39,7 @@ function App() {
          
             {
              user?.email === 'natalymedinasilva@gmail.com'
-             ||  user?.email === 'eabantov20_1@unc.edu.pe'
-             ||  user?.email === 'henryave30@gmail.com'
+             
              ?
               <Route path='/add-product' element={<AddProduct />} />
               :
