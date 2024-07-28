@@ -114,7 +114,7 @@ const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObt
 
                             </li>
                             <li className='form__item'>
-                                <label htmlFor="descuento">Ingrese precio con descuento:</label>
+                                <label htmlFor="descuento">Ingrese precio de aniversario:</label>
                                 <input {...register('descuento')} type="number" id='descuento' placeholder=' Ingresar precio con dscto' required />
                             </li>
 

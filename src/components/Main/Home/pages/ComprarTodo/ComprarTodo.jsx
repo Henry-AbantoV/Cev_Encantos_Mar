@@ -33,7 +33,7 @@ const ComprarTodo = ({ data, inputValue }) => {
               </div>
 
               <div className="producto__info-datoss">
-                <b>Precio: </b>
+                <b>Precio de aniversario: </b>
                 <b>s/ {data?.descuento} </b>
               </div>
 
