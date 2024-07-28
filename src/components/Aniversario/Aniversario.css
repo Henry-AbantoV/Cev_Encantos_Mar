@@ -1,0 +1,24 @@
+.carousel-item {
+    height: 500px; /* Ajusta esta altura según tus necesidades */
+  }
+
+  .carousel-item img.custom-img,
+.carousel-item video.custom-video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover; /* También puedes usar 'cover' según el comportamiento deseado */
+}
+
+.gradient-text {
+    background-image: linear-gradient(to top, #fb2205 0%, #fa0505 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  .color-text{
+    color: white;
+    font-weight: bold;
+  }
