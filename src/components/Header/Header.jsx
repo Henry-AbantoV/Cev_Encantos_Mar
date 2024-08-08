@@ -27,7 +27,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 <li> <Link to='/'>Inicio</Link> </li>
                 <li> <Link to='/sobre-nosotros'>Acerca de</Link> </li>
                 <li> <Link to='/contacto'>Contacto</Link> </li>
-                <li> <Link to='/aniversario'>Aniversario</Link> </li>
+                <li> <Link to='/aniversario'>Promociones</Link> </li>
 
                 {
                         user?.email === 'natalymedinasilva@gmail.com'
