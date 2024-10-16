@@ -22,7 +22,6 @@ useEffect(() => {
 },[obtenerData])
   return (
     <div className='main__container'>
-
     <div className='btn__agregar'>
       <button onClick={() => {
         setIsOpenModal(!isOpenModal)

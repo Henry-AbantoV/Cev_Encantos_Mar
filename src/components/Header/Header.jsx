@@ -38,14 +38,12 @@ const Header = ({ isOpen, setIsOpen }) => {
                         :
                         ''
                 }
-
             </div>
 
 
 
             <div className='nav__user'>
                 <div className='nav__user-datos ocultar'>
-
                     {
                         isLoading ?
                             <p>Cargando...</p>
@@ -55,8 +53,6 @@ const Header = ({ isOpen, setIsOpen }) => {
                                 :
                                 <p>Sin usuario</p>
                     }
-
-
                     {
                         isAuthenticated ?
                             <button onClick={() => logout()}>
@@ -67,23 +63,17 @@ const Header = ({ isOpen, setIsOpen }) => {
                             <button className='btn_inicioSecion' onClick={() => loginWithRedirect()}>
                                 Registrate
                             </button>
-
                     }
-
                 </div>
-
                 {
                     isLoading ?
                         <p>cargando...</p>
                         :
-
                         isAuthenticated ?
                             <img className='ocultar' src={user?.picture} alt={user.name} />
                             :
                             <img className='ocultar' src={userDefault} alt="" />
-
                 }
-
             </div>
         </nav>
     )

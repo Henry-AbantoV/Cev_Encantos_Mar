@@ -3,12 +3,9 @@ import usePost from '../../../../Hooks/usePost';
 //import libreria form
 import { useForm } from 'react-hook-form';
 import usePut from '../../../../Hooks/usePut';
-
 import fotoProduct from '../../../../image/addProduct.png'
 import './FormProduct.css'
 import useSubirImage from '../../../../Hooks/useSubirImage';
-
-
 
 const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObtenerData }) => {
     const URL = "https://65dcf122e7edadead7ed26d9.mockapi.io/Product"
@@ -134,12 +131,10 @@ const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObt
                                     }}
                                 >{obtenerData ? 'Modificar' : 'Registrar'}  </button>
                             </li>
-
                             <li className='form__item'>
                                 <label>Ingrese categoria:</label>
                             </li>
                             <li
-
                                 className='form__item'>
                                 <label>
                                     <input type="radio" {...register('categoria', { required: true })} value="Sin_categoria" />
@@ -165,12 +160,8 @@ const FormProduct = ({ isOpenModal, setIsOpenModal, getData, obtenerData, setObt
                                     <input type="radio" {...register('categoria', { required: true })} value="Marisqueria" />
                                     Marisqueria
                                 </label>
-
                             </li>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
