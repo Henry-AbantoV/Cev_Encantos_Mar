@@ -8,7 +8,6 @@ import { useAuth0 } from '@auth0/auth0-react'
 const Header = ({ isOpen, setIsOpen }) => {
 
     const { loginWithRedirect, isAuthenticated, isLoading, logout, user } = useAuth0();
-
     return (
         <nav className='nav'>
             <div className='nav__logo'>
@@ -28,20 +27,16 @@ const Header = ({ isOpen, setIsOpen }) => {
                 <li> <Link to='/sobre-nosotros'>Acerca de</Link> </li>
                 <li> <Link to='/contacto'>Contacto</Link> </li>
                 <li> <Link to='/aniversario'>Promociones</Link> </li>
-
                 {
                         user?.email === 'natalymedinasilva@gmail.com'
                         || user?.email === 'eabantov20_1@unc.edu.pe'
-                        || user?.email === 'henryave30@gmail.com'
+                        || user?.email === 'Angelicadelacruzaguilar0202@gmail.com'
                         ?
                         <li> <Link to='/add-product'>Add product</Link> </li>
                         :
                         ''
                 }
             </div>
-
-
-
             <div className='nav__user'>
                 <div className='nav__user-datos ocultar'>
                     {
