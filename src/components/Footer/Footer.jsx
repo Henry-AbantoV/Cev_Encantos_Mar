@@ -8,7 +8,7 @@ const Footer = () => {
            <b >
                 <a className='s' href="https://maps.app.goo.gl/qQ11tWAjVQW6Lpb47" target="_blank" rel="noopener noreferrer">
 
-                    <i className="fas fa-map-marker-alt"></i> AV. San Martin cdra 11
+                    <i className="fas fa-map-marker-alt"></i> Av. San Martin cuadra 10 esquina con el pasaje El Imperio
                 </a>
             </b>
            </div>
