@@ -41,7 +41,7 @@ function App() {
             {
               user?.email === 'natalymedinasilva@gmail.com'
                 || user?.email === 'eabantov20_1@unc.edu.pe'
-                || user?.email === 'Angelicadelacruzaguilar0202@gmail.com'
+                || user?.email === 'dayronleonyunvasquezdelacruz@gmail.com'
                 ?
                 <Route path='/add-product' element={<AddProduct />} />
                 :

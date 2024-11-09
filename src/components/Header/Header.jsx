@@ -30,7 +30,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 {
                         user?.email === 'natalymedinasilva@gmail.com'
                         || user?.email === 'eabantov20_1@unc.edu.pe'
-                        || user?.email === 'Angelicadelacruzaguilar0202@gmail.com'
+                        || user?.email === 'dayronleonyunvasquezdelacruz@gmail.com'
                         ?
                         <li> <Link to='/add-product'>Add product</Link> </li>
                         :
