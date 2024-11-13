@@ -11,7 +11,7 @@ const Aniversario = () => {
 
   return (
     <div className="aniversario__container">
-      <h2>Promociones de Aniversario</h2>
+      <h2>Aprovecha nuestras mejores promociones</h2>
       <div className="grid__container">
         {data && data
           .slice(0) // Clonar array para no modificar el original
