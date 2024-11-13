@@ -4,7 +4,7 @@ import useModal from '../../../Hooks/useModal'
 import useGet from '../../../Hooks/useGet'
 import DetailsProduct from './DetailsProduct/DetailsProduct'
 import './AddProduct.css'
-
+import Promotion from './AddPrmotion'
 const AddProduct = () => {
   const { isOpenModal, setIsOpenModal } = useModal()
   const [obtenerData, setObtenerData] = useState()
@@ -28,9 +28,11 @@ useEffect(() => {
         setObtenerData(false)
       }}
       >
-        + Agregar
+        Agregar  producto
       </button>
     </div>
+    <Promotion/>
+    
 
     <div>
       {

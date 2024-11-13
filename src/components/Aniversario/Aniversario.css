@@ -1,24 +1,27 @@
-.carousel-item {
-    height: 500px; /* Ajusta esta altura según tus necesidades */
-  }
-
-  .carousel-item img.custom-img,
-.carousel-item video.custom-video {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: cover; /* También puedes usar 'cover' según el comportamiento deseado */
+.aniversario__container {
+  padding: 20px;
+  text-align: center;
 }
 
-.gradient-text {
-    background-image: linear-gradient(to top, #fb2205 0%, #fa0505 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
 
-  .color-text{
-    color: white;
-    font-weight: bold;
-  }
+.grid__card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.grid__media {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 200px; /* Ajustar el tamaño de la imagen o video */
+  object-fit: cover;
+}

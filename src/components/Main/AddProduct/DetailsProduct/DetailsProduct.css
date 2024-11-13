@@ -29,7 +29,15 @@
 }
 
 
-
+.producto__img img,
+.producto__img video {
+  width: 100%;       /* Ancho completo del contenedor */
+  height: auto;      /* Mantener la proporción */
+  max-height: 200px; /* Ajusta según el tamaño máximo deseado */
+  object-fit: cover; /* Cubre el área sin distorsión */
+  border-radius: 8px; /* Redondeado para estilo */
+  margin-bottom: 1rem; /* Margen inferior para separar de los botones */
+}
 
 .producto__img {
     /* background-color: aqua; */

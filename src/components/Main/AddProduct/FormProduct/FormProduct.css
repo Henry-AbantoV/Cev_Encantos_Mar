@@ -192,8 +192,37 @@ input:focus {
 
 }
 
+.form__datos-foto img,
+.form__datos-foto video {
+  width: 100%;        /* Ajusta el ancho de la imagen o video al contenedor */
+  height: auto;       /* Mantiene la proporción */
+  max-height: 250px;  /* Ajusta según el tamaño máximo que desees */
+  object-fit: cover;  /* Asegura que la imagen o video se adapte sin distorsión */
+  border-radius: 8px; /* Opcional: Añade un borde redondeado para estilo */
+  margin-bottom: 1rem; /* Añade margen inferior para separar de los botones */
+}
 
-
+.form__actions {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 20px;
+  }
+  
+  .btn-promotion {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4897c5; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-promotion:hover {
+    background-color: #45a049; /* Color al pasar el mouse */
+  }
+  
 
 /* .card__img_svg {
     width: 2em;

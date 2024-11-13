@@ -1,57 +1,34 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect, useState } from 'react';
+import useGet from '../../Hooks/useGet';
 import './Aniversario.css';
 
-import ftAniversario from '../../image/aniversario.jpg';
-import ftCumple from '../../image/ftCumple.jpg';
-import aniversarioE from '../../image/aniversarioE.mp4'; 
-import aniversarioEWebm from '../../image/aniversarioE.webm';
-
-
 const Aniversario = () => {
+  const { data, getData } = useGet('https://65dcf122e7edadead7ed26d9.mockapi.io/promocion');
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
-    <div className="form__container">
-      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={ftAniversario} className="d-block w-100 img-fluid custom-img" alt="Slide 1" />
-            
-          </div>
-
-          <div className="carousel-item">
-            <video className="d-block w-100 custom-video" controls>
-              <source src={aniversarioE} type="video/mp4" />
-              <source src={aniversarioEWebm} type="video/webm" />
-            </video>
-            <div className="carousel-caption d-none d-md-block">
-              <p className="gradient-text">Disfruta de nuestro video especial</p>
-              <p className='color-text'>Aniversario</p>
+    <div className="aniversario__container">
+      <h2>Promociones de Aniversario</h2>
+      <div className="grid__container">
+        {data && data
+          .slice(0) // Clonar array para no modificar el original
+          .reverse() // Invertir el orden para mostrar el más reciente primero
+          .map((promotion) => (
+            <div key={promotion.id} className="grid__card">
+              {promotion.video ? (
+                <video controls className="grid__media">
+                  <source src={promotion.video} type="video/mp4" />
+                  Tu navegador no soporta el video.
+                </video>
+              ) : (
+                <img src={promotion.imagen} alt={promotion.nombre} className="grid__media" />
+              )}
+              <h3>{promotion.nombre}</h3>
             </div>
-          </div>
-
-          <div className="carousel-item">
-            <img src={ftCumple} className="d-block w-100 img-fluid custom-img" alt="Slide 2" />
-            <div className="carousel-caption d-none d-md-block">
-            <h5 className="gradient-text">Feliz cumpleaños! Ven y celebra con nosotros.</h5>
-            <p className="gradient-text">Descuentos y ofertas especiales.</p>
-            </div>
-          </div>
-       
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+          ))}
       </div>
     </div>
   );
